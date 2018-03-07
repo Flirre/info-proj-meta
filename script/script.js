@@ -130,11 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var sets = [
         { sets: [0], label: "Desktop Computer",	size: 144 },
         { sets: [1], label: "E-mail", size: 57 },
-        { sets: [2], label: "Electronic Medical Record", size: 36 },
+        { sets: [2], label: "E-Medical Record", size: 36 },
         { sets: [3], label: "Laptop", size: 244 },
         { sets: [4], label: "Network Server", size: 125 },
         { sets: [5], label: "Paper", size: 235 },
-        { sets: [6], label: "Other Portable Electronic Device",	size: 122 },
+        { sets: [6], label: "Other Portable  e-Device",	size: 122 },
         { sets: [7], label: "Other", size: 176 },
 
         { sets: [0, 1],	size: 1 },
