@@ -334,3 +334,7 @@ footer a:visited {
     text-decoration-style: dotted;
     color: #F7F7F7;
 }
+
+.ui-helper-hidden-accessible {
+    display:none;
+}
