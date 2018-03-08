@@ -9,63 +9,98 @@
 <body>
 	<div id="poster">
 
-		<div id="header" class="box header">
-			<h1>Data Security Breaches In US Health Care</h1>
-			<h2>2009–2013</h2>
-			<hr id="sepLine" />
-		</div>
+	    <div id="header" class="box header">
+		<h1>Data Security Breaches In US Health Care</h1>
+		<h2>2009–2013</h2>
+		<hr id="sepLine" />
+	    </div>
 
-		<div id="stats" class="box regular">
-			<p class="big" style="padding: 0 5rem;">
-				The health care sector works with a lot of sensitive and private data such as
-				social security numbers, addresses, medical diagnoses etc.
-			</p>
-			<p class="bigger">
-				A total of
-				<span class="numberText" id="totalnr">0</span> security breaches reported.
-			</p>
-			<div class="three_col">
-				<img src="images/theftwhite.svg" width="150px">
-				<p>Thefts</p>
-				<p class="numberText" id="thefts">
-					<span id="theftnr">0</span>
-				</p>
-			</div>
-			<div class="three_col">
-				<img src="images/unauthorizedaccesswhite.svg" width="150px">
-				<p>Unauthorized Access</p>
-				<p class="numberText" id="others">
-					<span id="accessnr">0</span>
-				</p>
-			</div>
-			<div class="three_col">
-				<img src="images/losswhite.svg" width="150px">
-				<p>Loss</p>
-				<p class="numberText" id="others">
-					<span id="lossnr">0</span>
-				</p>
-			</div>
-			<div class="three_col">
-				<img src="images/hackingwhite.svg" width="150px">
-				<p>Hacking/IT Incidents</p>
-				<p class="numberText" id="hacking_incidents">
-					<span id="hacknr">0</span>
-				</p>
-			</div>
-			<div class="three_col">
-				<img src="images/disposalwhite.svg" width="150px">
-				<p>Disposal</p>
-				<p class="numberText" id="others">
-					<span id="dissnr">0</span>
-				</p>
-			</div>
-			<div class="three_col">
-				<img src="images/otherwhite.svg" width="150px">
-				<p>Others</p>
-				<p class="numberText" id="others">
-					<span id="othersnr">0</span>
-				</p>
-			</div>
+	    <div id="stats" class="box regular">
+		<p class="big" style="padding: 0 5rem;">
+		    The health care sector works with a lot of sensitive and private data such as
+		    social security numbers, addresses, medical diagnoses etc.
+		</p>
+		<p class="bigger">
+		    A total of
+		    <span class="numberText" id="totalnr">0</span> security breaches reported.
+		</p>
+		<div class="three_col">
+		    <img src="images/theftwhite.svg" width="150px">
+		    <p><a class ="tool" id="tooltip-thefts" href = "#" title = "Stealing of physical objects such as laptops or documents containing medical records.">
+			Thefts
+			<sup>
+			    <i class="fas fa-info-circle"></i>
+			</sup></a></p>
+		    <p class="numberText" id="thefts">
+			<span id="theftnr">0</span>
+		    </p>
+		</div>
+		<div class="three_col">
+		    <img src="images/unauthorizedaccesswhite.svg" width="150px">
+		    <p><a class ="tool" id="tooltip-access" href = "#" title = "Information about individuals were disclosed to people without authorization. For example by improperly configured applications.">
+			Unauthorized access
+			<sup>
+			    <i class="fas fa-info-circle"></i>
+			</sup></a></p>
+
+		    <p class="numberText" id="others">
+			<span id="accessnr">0</span>
+		    </p>
+		</div>
+		<div class="three_col">
+		    <img src="images/losswhite.svg" width="150px">
+		    <p><a class ="tool" id="tooltip-loss" href = "#" title = "The loss data through misplacement of computers, backup tapes or similar.">
+			Loss
+			<sup>
+			    <i class="fas fa-info-circle"></i>
+			</sup></a></p>
+
+		    <p class="numberText" id="others">
+			<span id="lossnr">0</span>
+		    </p>
+		</div>
+		<div class="three_col">
+		    <img src="images/hackingwhite.svg" width="150px">
+		    <p><a class ="tool" id="tooltip-hacking" href = "#" title = "Individuals gaining access to private data by illegally hacking servers.">
+			Hacking
+			<sup>
+			    <i class="fas fa-info-circle"></i>
+			</sup></a></p>
+
+
+		    <p class="numberText" id="hacking_incidents">
+			<span id="hacknr">0</span>
+		    </p>
+		</div>
+		<div class="three_col">
+		    <img src="images/disposalwhite.svg" width="150px">
+		    <p><a class ="tool" id="tooltip-disposal" href = "#" title = "Data being disposed of improperly, such as throwing confidential documents in to a dumpster outside an office.">
+			Disposal
+			<sup>
+			    <i class="fas fa-info-circle"></i>
+			</sup></a></p>
+
+		    <p class="numberText" id="others">
+			<span id="dissnr">0</span>
+		    </p>
+		</div>
+		<div class="three_col">
+		    <img src="images/otherwhite.svg" width="150px">
+		    <p><a class ="tool" id="tooltip-others" href = "#" title = "Incidents that are harder to classify. An example are confidential patient information unknowingly being sent to other patients.">
+			Others
+			<sup>
+			    <i class="fas fa-info-circle"></i>
+			</sup></a></p>
+
+		    <p class="numberText" id="others">
+			<span id="othersnr">0</span>
+		    </p>
+		</div>
+	    </div>
+
+	    <div class="box box1 regular">
+		<h2>Affected individuals</h2>
+
 		</div>
 
 		<div class="box box1 regular">

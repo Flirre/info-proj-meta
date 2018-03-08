@@ -11,6 +11,78 @@ $('#hacknr').animateNumber({ number: 64 }, timesec*0.4);
 $('#dissnr').animateNumber({ number: 38 }, timesec*0.4);
 
 
+$( "#tooltip-thefts" ).tooltip({
+    position: {
+        my: "center bottom",
+        at: "center top-10",
+        collision: "flip",
+        using: function( position, feedback ) {
+            $( this ).addClass( feedback.vertical )
+                .css( position );
+        }
+    }
+});
+
+$( "#tooltip-access" ).tooltip({
+    position: {
+        my: "center bottom",
+        at: "center top-10",
+        collision: "flip",
+        using: function( position, feedback ) {
+            $( this ).addClass( feedback.vertical )
+                .css( position );
+        }
+    }
+});
+
+$( "#tooltip-loss" ).tooltip({
+    position: {
+        my: "center bottom",
+        at: "center top-10",
+        collision: "flip",
+        using: function( position, feedback ) {
+            $( this ).addClass( feedback.vertical )
+                .css( position );
+        }
+    }
+});
+
+$( "#tooltip-hacking" ).tooltip({
+    position: {
+        my: "center bottom",
+        at: "center top-10",
+        collision: "flip",
+        using: function( position, feedback ) {
+            $( this ).addClass( feedback.vertical )
+                .css( position );
+        }
+    }
+});
+
+$( "#tooltip-disposal" ).tooltip({
+    position: {
+        my: "center bottom",
+        at: "center top-10",
+        collision: "flip",
+        using: function( position, feedback ) {
+            $( this ).addClass( feedback.vertical )
+                .css( position );
+        }
+    }
+});
+
+$( "#tooltip-others" ).tooltip({
+    position: {
+        my: "center bottom",
+        at: "center top-10",
+        collision: "flip",
+        using: function( position, feedback ) {
+            $( this ).addClass( feedback.vertical )
+                .css( position );
+        }
+    }
+});
+
 function drawTheftsPlot() {
   d3.tsv("https://dl.dropbox.com/s/m616ci5b4y8dqhb/breaches%20%283%29.xlsx%20-%20Taul1.tsv?dl=0", function (data) {
     lineChart = new dimple.chart(svgLine, data);
