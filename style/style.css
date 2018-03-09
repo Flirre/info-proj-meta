@@ -245,10 +245,10 @@ footer a:visited {
 		padding:0;
 		margin:0;
 		color: white;
-		font-size: 11px;
+		font-size: 12px;
 	}
 	#tooltip tr td:nth-child(1){
-		width:90px;
+		width:105px;
 	}
 	#tooltip tr td:nth-child(2){
 		text-align:center;
@@ -337,4 +337,9 @@ footer a:visited {
 
 .ui-helper-hidden-accessible {
     display:none;
+}
+
+.star {
+    text-align: left;
+    padding-left: 18%;
 }

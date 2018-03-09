@@ -170,7 +170,7 @@ function tooltipHtml(n, d){	/* function to create html content string in tooltip
 	"<tr><td>Other</td><td>"+(d.other)+"</td></tr>"+
 	"<tr><td>Theft</td><td>"+(d.theft)+"</td></tr>"+
 	"<tr><td>Unauth. access</td><td>"+(d.disclosure)+"</td></tr>"+
-	"<tr><td>Breach factor</td><td>"+(((d.sum/d.population)*100000).toFixed(3))+"</td></tr>"+
+	"<tr><td>Breach factor<strong>*</strong></td><td>"+(((d.sum/d.population)*100000).toFixed(3))+"</td></tr>"+
 	"<tr><td>Total</td><td>"+(d.sum)+"</td></tr>"+
 	"</table>";
 }
