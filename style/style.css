@@ -1,5 +1,5 @@
 body {
-    background: #222;
+    background: #1D232F;
     font-family: 'Lato', sans-serif;
     color: rgb(46, 46, 46);
 	margin: 0px;
@@ -75,7 +75,7 @@ footer a:visited {
 
 .box1 {
 	padding-top: 2rem;
-	background-color: #444;
+	background-color: #333344;
 }
 
 #map-box {
