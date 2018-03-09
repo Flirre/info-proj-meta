@@ -343,3 +343,29 @@ footer a:visited {
     text-align: left;
     padding-left: 18%;
 }
+
+.metabar {
+    overflow: hidden;
+    position: fixed;
+    background-color: #333344;
+    top: 0px;
+    width: 100%;
+}
+
+/* Links inside the navbar */
+.metabar .leftbutton {
+    float: left;
+    display: block;
+    color: #f7f7f7;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #555566;
+    border: 0px;
+}
+
+.metabar button:hover {
+    background: #9999AA;
+    color: #F7F7F7;
+}

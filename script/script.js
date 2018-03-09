@@ -288,3 +288,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 .style("stroke-opacity", 0);
         });
 });
+
+function gotoTab(id)
+{
+    d3.selectAll(".tab").style("display", "none");
+    d3.select("#"+id).style("padding-top","6%");
+    d3.select("#"+id).style("display","block");
+};
+
+function allTabs()
+{
+    d3.selectAll(".tab").style("display", "block");
+}
