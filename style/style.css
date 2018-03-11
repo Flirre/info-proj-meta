@@ -367,6 +367,18 @@ footer a:visited {
     border: 0px;
 }
 
+.metabar .rightbutton {
+    float: right;
+    display: block;
+    color: #f7f7f7;
+    padding: 5px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #555566;
+    border: 0px;
+}
+
 .metabar button:hover {
     background: #9999AA;
     color: #F7F7F7;

@@ -300,3 +300,13 @@ function allTabs()
 {
     d3.selectAll(".tab").style("display", "block");
 };
+
+function showAnnotations()
+{
+    d3.selectAll(".annotation").style("visibility", "visible");
+};
+
+function hideAnnotations()
+{
+    d3.selectAll(".annotation").style("visibility", "hidden");
+};
