@@ -378,17 +378,20 @@ footer a:visited {
 
 .annotation {
     position: absolute;
+    background-color: rgba(255,255,255,0.3);
     border: dashed 1px;
     border-color: lightgray;
     border-radius: 3px;
 }
 
 .individual {
-    background-color: rgba(120, 120, 200, 0.6);
+    fill:#CCCCFF;
+    stroke: blue;
 }
 
 .group {
-    background-color: rgba(120, 200, 120, 0.6);
+    fill: #CCFFCC;
+    stroke: green;
 }
 
 #annotation1 {
@@ -425,4 +428,8 @@ footer a:visited {
 
 #annotation9 {
     font-size:2.7px;
+}
+
+#annotation10 {
+    font-size:2.3px;
 }
