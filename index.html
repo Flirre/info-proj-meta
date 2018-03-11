@@ -33,7 +33,7 @@
             </p>
             <div class="three_col annotation_container">
                 <img src="images/theftwhite.svg" width="150px">
-                <svg id="annotation1" class="individual annotation" viewBox="0 0 100 100" style="top:48%; left: 5%; width: 80%; height: 60%;">
+                <svg id="annotation1" class="individual annotation" viewBox="0 0 100 100" style="top:51%; left: 5%; width: 80%; height: 60%;">
 			<rect x="-0.5em" y="4.5em" width="21em" height="12.5em" style="fill: white; stroke: green;"/>
 			<text x="0em" y="6em">Details on demand, available on hover</text>
 			<text x="0em" y="7em">since that enables me to give further</text>
@@ -146,7 +146,14 @@
         <div id="individuals" class="tab box box1 regular">
             <h2>Affected individuals</h2>
 
-            <div class="column">
+            <div class="column annotation_container">
+		<svg id="annotation6" class="individual annotation" viewBox="0 0 100 100" style="top:0%; left: 8%; width: 85%; height: 150%;">
+		    <rect x="-18.5em" y="11em" width="25em" height="6.5em" style="fill: white; stroke: green;"/>
+		    <text x="-17.5em" y="13em">This was a poor use of space and we could have</text>
+		    <text x="-17.5em" y="14em">included another visualization here or perhaps</text>
+		    <text x="-17.5em" y="15em">change the layout of the page to make better use</text>
+		    <text x="-17.5em" y="16em">of the space.</text>
+		</svg>
                 <p class="big">
                     These data breaches affect many people. The chart on the right show the total number of affected people per breach type.
                 </p>
@@ -155,12 +162,21 @@
             <div class="column annotation_container">
                 <div id="barChartContainer"></div>
                 <svg id="annotation5" class="group annotation" viewBox="0 0 100 100" style="top:0%; left: 0%; width: 65%; height: 100%;">
-			<rect x="21em" y="3em" width="18em" height="8em" style="fill: white; stroke: green;"/>
+			<rect x="21em" y="3em" width="18em" height="16em" style="fill: white; stroke:green ;"/>
 			<text x="22em" y="5em">A bar chart was chosen to represent</text>
 			<text x="22em" y="6em">this data since the focus is showing</text>
 			<text x="22em" y="7em">the difference in <tspan font-weight="bold">amounts</tspan>
 			    of people</text>
 			<text x="22em" y="8em">affected.</text>
+			<text x="22em" y="10em">That kind of information could be</text>
+			<text x="22em" y="11em">relevant to a <tspan font-weight="bold">user</tspan> wanting to know </text>
+			<text x="22em" y="12em">what kinds of breaches they should</text>
+			<text x="22em" y="13em"><tspan font-weight="bold"> focus on to minimize the amount</tspan></text>
+			<text x="22em" y="14em">of affected individuals.</text>
+
+			<text x="22em" y="16em">A possible improvement to this graph</text>
+			<text x="22em" y="17em">could be the possibility to filter</text>
+			<text x="22em" y="18em">out certain years.</text>
 		</svg>
 		</div>
 	    </div>
@@ -168,11 +184,24 @@
 	<div id="attacks" class="tab box regular">
 		<h2>Types of attacks and target items</h2>
 
-		<div class="column">
+		<div class="column annotation_container">
+		    <svg id="annotation7" class="group annotation" viewBox="0 0 100 100" style="top:15%; left: 5%; width: 180%; height: 16%;">
+			<rect x="0em" y="0.1em" width="20em" height="8em" style="fill: white; stroke: green;"/>
+			<text x="1em" y="3em">Just a couple of short sentences <tspan font-weight="bold">providing</tspan></text>
+			<text x="1em" y="4em"><tspan font-weight="bold">the user</tspan> with some <tspan font-weight="bold">context</tspan> for the</text>
+			<text x="1em" y="5em">accompanying visualizations below</text>
+
+		    </svg>
 		    <h3>Stolen items</h3>
 		    <p class="medium">Visualization of the items stolen and in how many cases that has happened. During some cases, several items were stolen.</p>
 
-		    <div class="center">
+		    <div class="center annotation_container">
+			<svg id="annotation8" class="group annotation" viewBox="0 0 100 100" style="top:0%; left: 30%; width: 60%; height: 100%;">
+			    <rect x="22.5em" y="1em" width="20em" height="8em" style="fill: white; stroke: green;"/>
+			    <text x="23em" y="3em">A Venn diagram was chosen since it is good</text>
+			    <text x="23em" y="4em">at <tspan font-weight="bold">showing intersections</tspan> in data, which</text>
+			    <text x="23em" y="5em">is what we are doing here.</text>
+			</svg>
 			<div id="venn"></div>
 		    </div>
 		</div>
@@ -182,7 +211,16 @@
 		    <h3>Behaviour over the years</h3>
 		    <p class="medium">Visualization of the different types of breaches over the years 2009 - 2013.</p>
 
-		    <div class="center">
+		    <div class="center annotation_container">
+			<svg id="annotation9" class="group annotation" viewBox="0 0 100 100" style="top:0%; left: 20%; width: 70%; height: 100%;">
+			    <rect x="26.5em" y="5em" width="20em" height="10em" style="fill: white; stroke: green;"/>
+			    <text x="27em" y="7em">A line chart was chosen since it is a good</text>
+			    <text x="27em" y="8em">way to show <tspan font-weight="bold">show change over time</tspan>.</text>
+			    <text x="27em" y="10em">The filtering is a good way for the user</text>
+			    <text x="27em" y="11em">to see any trends in what kinds</text>
+			    <text x="27em" y="12em">of attacks are being reported</text>
+			    <text x="27em" y="13em">over the years.</text>
+			</svg>
 			<div id="theftsContainer"></div>
 		    </div>
 
@@ -205,7 +243,16 @@
 		<h2>Number of breaches per state</h2>
 		<p style="text-align: center">Hover over the states to show details!</p>
 
-		<div id="statesContainer">
+		<div id="statesContainer" class="annotation_container">
+		    <svg id="annotation10" class="individual annotation" viewBox="0 0 100 100" style="top:0%; left: 20%; width: 70%; height: 100%;">
+			<rect x="26.5em" y="5em" width="20em" height="10em" style="fill: white; stroke: green;"/>
+			<text x="27em" y="7em">A line chart was chosen since it is a good</text>
+			<text x="27em" y="8em">way to show <tspan font-weight="bold">show change over time</tspan>.</text>
+			<text x="27em" y="10em">The filtering is a good way for the user</text>
+			<text x="27em" y="11em">to see any trends in what kinds</text>
+			<text x="27em" y="12em">of attacks are being reported</text>
+			<text x="27em" y="13em">over the years.</text>
+		    </svg>
 		    <div id="tooltip" class="tooltip"></div>
 		    <!-- div to hold tooltip. -->
 		    <svg width="960" height="600" id="statesvg"></svg>
