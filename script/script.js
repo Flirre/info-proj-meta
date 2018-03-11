@@ -314,6 +314,7 @@ function hideAnnotations()
 
 function showOverlay()
 {
+    allTabs();
     $(document).ready(function(){
 	$("html, body").animate({ scrollTop: 0 }, "slow");
 	return false;
