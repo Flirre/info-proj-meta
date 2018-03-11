@@ -1,39 +1,39 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meta-visualization</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
 
-    <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    </head>
+<body>
+    <div class="metabar">
+        <button class="leftbutton" onclick="allTabs()">Show All</button>
+        <button class="leftbutton" onclick="gotoTab('stats')">Stats</button>
+        <button class="leftbutton" onclick="gotoTab('individuals')">Individuals</button>
+        <button class="leftbutton" onclick="gotoTab('attacks')">Types</button>
+        <button class="leftbutton" onclick="gotoTab('breaches')">States</button>
 
-    <body>
-	<div class="metabar">
-	    <button class="leftbutton" onclick="allTabs()">Show All</button>
-	    <button class="leftbutton" onclick="gotoTab('stats')">Stats</button>
-	    <button class="leftbutton" onclick="gotoTab('individuals')">Individuals</button>
-	    <button class="leftbutton" onclick="gotoTab('attacks')">Types</button>
-	    <button class="leftbutton" onclick="gotoTab('breaches')">States</button>
+    </div>
+    <div id="poster">
+        <div id="header" class="box header tab">
+            <h1>Data Security Breaches In US Health Care</h1>
+            <h2>2009–2013</h2>
+            <hr id="sepLine" />
+        </div>
 
-	</div>
-	<div id="poster">
-	    <div id="header" class="box header tab">
-		<h1>Data Security Breaches In US Health Care</h1>
-		<h2>2009–2013</h2>
-		<hr id="sepLine" />
-	    </div>
-
-	    <div id="stats" class="tab box regular">
-		<p class="big" style="padding: 0 5rem;">
-		    The health care sector works with a lot of sensitive and private data such as
-		    social security numbers, addresses, medical diagnoses etc.
-		</p>
-		<p class="bigger">
-		    A total of
-		    <span class="numberText" id="totalnr">0</span> security breaches reported.
-		</p>
-		<div class="three_col annotation_container">
-		    <img src="images/theftwhite.svg" width="150px">
-		    <svg id="annotation1" class="individual annotation" viewBox="0 0 100 100" style="top:48%; left: 5%; width: 80%; height: 60%;">
+        <div id="stats" class="tab box regular">
+            <p class="big" style="padding: 0 5rem;">
+                The health care sector works with a lot of sensitive and private data such as social security numbers, addresses, medical diagnoses etc.
+            </p>
+            <p class="bigger">
+                A total of
+                <span class="numberText" id="totalnr">0</span> security breaches reported.
+            </p>
+            <div class="three_col annotation_container">
+                <img src="images/theftwhite.svg" width="150px">
+                <svg id="annotation1" class="individual annotation" viewBox="0 0 100 100" style="top:48%; left: 5%; width: 80%; height: 60%;">
 			<rect x="-0.5em" y="4.5em" width="21em" height="12.5em" style="fill: white; stroke: green;"/>
 			<text x="0em" y="6em">Details on demand, available on hover</text>
 			<text x="0em" y="7em">since that enables me to give further</text>
@@ -47,47 +47,47 @@
 			<text x="0em" y="15em">changing the opacity of the tooltip or</text>
 			<text x="0em" y="16em">perhaps its placement.</text>
 		    </svg>
-		    <p><a class ="tool" id="tooltip-thefts" href = "#" title = "Stealing of physical objects such as laptops or documents containing medical records.">
+                <p><a class="tool" id="tooltip-thefts" href="#" title="Stealing of physical objects such as laptops or documents containing medical records.">
 			Thefts
 			<sup>
 			    <i class="fas fa-info-circle"></i>
 			</sup></a></p>
-		    <p class="numberText" id="thefts">
-			<span id="theftnr">0</span>
-		    </p>
-		</div>
-		<div class="three_col annotation_container">
-		    <img src="images/unauthorizedaccesswhite.svg" width="150px">
-		    <svg id="annotation3" class="group annotation" viewBox="0 0 100 100" style="top:70%; left: 10%; width: 80%; height: 30%;">
+                <p class="numberText" id="thefts">
+                    <span id="theftnr">0</span>
+                </p>
+            </div>
+            <div class="three_col annotation_container">
+                <img src="images/unauthorizedaccesswhite.svg" width="150px">
+                <svg id="annotation3" class="group annotation" viewBox="0 0 100 100" style="top:70%; left: 10%; width: 80%; height: 30%;">
 			<rect x="-50" y="6.2em" width="22em" height="4em" style="fill: white; stroke: green;"/>
 			<text x="-40" y="7.5em">The size, colour and animation of the</text>
 			<text x="-40" y="8.5em">numbers are used to grab the attention</text>
 			<text x="-40" y="9.5em">of the user.</text>
 		    </svg>
-		    <p><a class ="tool" id="tooltip-access" href = "#" title = "Information about individuals were disclosed to people without authorization. For example by improperly configured applications.">
+                <p><a class="tool" id="tooltip-access" href="#" title="Information about individuals were disclosed to people without authorization. For example by improperly configured applications.">
 			Unauthorized access
 			<sup>
 			    <i class="fas fa-info-circle"></i>
 			</sup></a></p>
 
-		    <p class="numberText" id="others">
-			<span id="accessnr">0</span>
-		    </p>
-		</div>
-		<div class="three_col">
-		    <img src="images/losswhite.svg" width="150px">
-		    <p><a class ="tool" id="tooltip-loss" href = "#" title = "The loss data through misplacement of computers, backup tapes or similar.">
+                <p class="numberText" id="others">
+                    <span id="accessnr">0</span>
+                </p>
+            </div>
+            <div class="three_col">
+                <img src="images/losswhite.svg" width="150px">
+                <p><a class="tool" id="tooltip-loss" href="#" title="The loss data through misplacement of computers, backup tapes or similar.">
 			Loss
 			<sup>
 			    <i class="fas fa-info-circle"></i>
 			</sup></a></p>
 
-		    <p class="numberText" id="others">
-			<span id="lossnr">0</span>
-		    </p>
-		</div>
-		<div class="three_col annotation_container">
-		    <svg id="annotation2" class="group annotation" viewBox="0 0 100 100" style="top:7%; left: 15%; width: 70%; height: 80%;">
+                <p class="numberText" id="others">
+                    <span id="lossnr">0</span>
+                </p>
+            </div>
+            <div class="three_col annotation_container">
+                <svg id="annotation2" class="group annotation" viewBox="0 0 100 100" style="top:7%; left: 15%; width: 70%; height: 80%;">
 			<rect x="5" y="60" width="18em" height="10em" style="fill: white; stroke: green;"/>
 			<text x="12" y="14em">These glyphs are used to give</text>
 			<text x="12" y="15em">the user a quick, basic</text>
@@ -96,21 +96,21 @@
 			<text x="12" y="18em">number without reading the</text>
 			<text x="12" y="19em">tooltips.</text>
 		    </svg>
-		    <img src="images/hackingwhite.svg" width="150px">
-		    <p><a class ="tool" id="tooltip-hacking" href = "#" title = "Individuals gaining access to private data by illegally hacking servers.">
+                <img src="images/hackingwhite.svg" width="150px">
+                <p><a class="tool" id="tooltip-hacking" href="#" title="Individuals gaining access to private data by illegally hacking servers.">
 			Hacking
 			<sup>
 			    <i class="fas fa-info-circle"></i>
 			</sup></a></p>
 
 
-		    <p class="numberText" id="hacking_incidents">
-			<span id="hacknr">0</span>
-		    </p>
-		</div>
-		<div class="three_col annotation_container">
-		    <img src="images/disposalwhite.svg" width="150px">
-		    <svg id="annotation4" class="individual annotation" viewBox="0 0 100 100" style="top:100%; left: 25%; width: 150%; height: 30%;">
+                <p class="numberText" id="hacking_incidents">
+                    <span id="hacknr">0</span>
+                </p>
+            </div>
+            <div class="three_col annotation_container">
+                <img src="images/disposalwhite.svg" width="150px">
+                <svg id="annotation4" class="individual annotation" viewBox="0 0 100 100" style="top:100%; left: 25%; width: 150%; height: 30%;">
 			<rect x="-15em" y="2em" width="40em" height="6.5em" style="fill: white; stroke: green;"/>
 			<text x="-14em" y="3.5em">The glyphs used on this part of the
 			    page could and perhaps should have</text>
@@ -119,53 +119,53 @@
 			    the</text>
 			<text x="-14em" y="6.5em">glyphs clearer in the later parts of the page.</text>
 		    </svg>
-		    <p><a class ="tool" id="tooltip-disposal" href = "#" title = "Data being disposed of improperly, such as throwing confidential documents in to a dumpster outside an office.">
+                <p><a class="tool" id="tooltip-disposal" href="#" title="Data being disposed of improperly, such as throwing confidential documents in to a dumpster outside an office.">
 			Disposal
 			<sup>
 			    <i class="fas fa-info-circle"></i>
 			</sup></a></p>
 
-		    <p class="numberText" id="others">
-			<span id="dissnr">0</span>
-		    </p>
-		</div>
-		<div class="three_col">
-		    <img src="images/otherwhite.svg" width="150px">
-		    <p><a class ="tool" id="tooltip-others" href = "#" title = "Incidents that are harder to classify. An example are confidential patient information unknowingly being sent to other patients.">
+                <p class="numberText" id="others">
+                    <span id="dissnr">0</span>
+                </p>
+            </div>
+            <div class="three_col">
+                <img src="images/otherwhite.svg" width="150px">
+                <p><a class="tool" id="tooltip-others" href="#" title="Incidents that are harder to classify. An example are confidential patient information unknowingly being sent to other patients.">
 			Others
 			<sup>
 			    <i class="fas fa-info-circle"></i>
 			</sup></a></p>
 
-		    <p class="numberText" id="others">
-			<span id="othersnr">0</span>
-		    </p>
-		</div>
-	    </div>
+                <p class="numberText" id="others">
+                    <span id="othersnr">0</span>
+                </p>
+            </div>
+        </div>
 
-	    <div id="individuals" class="tab box box1 regular">
-		<h2>Affected individuals</h2>
+        <div id="individuals" class="tab box box1 regular">
+            <h2>Affected individuals</h2>
 
-		<div class="column">
-		    <p class="big">
-			These data breaches affect many people. The chart on the right show the total number
-			of affected people per breach type.
-		    </p>
-		</div>
+            <div class="column">
+                <p class="big">
+                    These data breaches affect many people. The chart on the right show the total number of affected people per breach type.
+                </p>
+            </div>
 
-		<div class="column annotation_container">
-		    <div id="barChartContainer"></div>
-		    <svg id="annotation5" class="group annotation" viewBox="0 0 100 100" style="top:0%; left: 0%; width: 65%; height: 100%;">
-			<rect x="14em" y="3em" width="18em" height="8em" style="fill: white; stroke: green;"/>
-			<text x="15em" y="5em">A bar chart was chosen to represent</text>
-			<text x="15em" y="6em">this data since the focus is showing</text>
-			<text x="15em" y="7em">the difference in <tspan font-weight="bold">amounts</tspan>
+            <div class="column annotation_container">
+                <div id="barChartContainer"></div>
+                <svg id="annotation5" class="group annotation" viewBox="0 0 100 100" style="top:0%; left: 0%; width: 65%; height: 100%;">
+			<rect x="21em" y="3em" width="18em" height="8em" style="fill: white; stroke: green;"/>
+			<text x="22em" y="5em">A bar chart was chosen to represent</text>
+			<text x="22em" y="6em">this data since the focus is showing</text>
+			<text x="22em" y="7em">the difference in <tspan font-weight="bold">amounts</tspan>
 			    of people</text>
-			<text x="15em" y="8em">affected. </text>
+			<text x="22em" y="8em">affected.</text>
+		</svg>
 		</div>
 	    </div>
 
-	    <div id="attacks" class="tab box regular">
+	<div id="attacks" class="tab box regular">
 		<h2>Types of attacks and target items</h2>
 
 		<div class="column">
@@ -199,9 +199,9 @@
 			</select>
 		    </div>
 		</div>
-	    </div>
+				    </div>
 
-	    <div id="breaches" class="tab box box1 regular" id="map-box">
+	<div id="breaches" class="tab box box1 regular" id="map-box">
 		<h2>Number of breaches per state</h2>
 		<p style="text-align: center">Hover over the states to show details!</p>
 
@@ -209,31 +209,31 @@
 		    <div id="tooltip" class="tooltip"></div>
 		    <!-- div to hold tooltip. -->
 		    <svg width="960" height="600" id="statesvg"></svg>
-		    <!-- svg to hold the map. -->
-		</div>
-		<p class="star">* breaches per 100k individuals.</p>
-		<div class="gradient">
-		    <div class="labels">
-			<div class="label min">0</div>
-			<div class="label median">0.5</div>
-			<div class="label max">1</div>
-		    </div>
-		    <div class="swatches"></div>
-		</div>
-		    </div>
+                <!-- svg to hold the map. -->
+            </div>
+            <p class="star">* breaches per 100k individuals.</p>
+            <div class="gradient">
+                <div class="labels">
+                    <div class="label min">0</div>
+                    <div class="label median">0.5</div>
+                    <div class="label max">1</div>
+                </div>
+                <div class="swatches"></div>
+            </div>
+        </div>
 
-	</div>
+    </div>
 
-	<footer class="box">
-	    <p>Data source: <a href="https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/Ecdat/HHSCyberSecurityBreaches.csv">https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/Ecdat/HHSCyberSecurityBreaches.csv</a></p>
-	</footer>
+    <footer class="box">
+        <p>Data source: <a href="https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/Ecdat/HHSCyberSecurityBreaches.csv">https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/Ecdat/HHSCyberSecurityBreaches.csv</a></p>
+    </footer>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
-	<script src="https://infovis.sjolie.se/js/dimple.v2.3.0.js"></script>
-	<script src="script/venn.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="script/script.js"></script>
-	<script src="script/uStates.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+    <script src="https://infovis.sjolie.se/js/dimple.v2.3.0.js"></script>
+    <script src="script/venn.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/uStates.js"></script>
