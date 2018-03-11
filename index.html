@@ -15,10 +15,11 @@
         <button class="leftbutton" onclick="gotoTab('attacks')">Types</button>
         <button class="leftbutton" onclick="gotoTab('breaches')">States</button>
 
-	<button class="rightbutton" onclick="showOverlay()">Show description</button>
-	<button class="rightbutton" onclick="hideOverlay()">Hide description</button>
 	<button class="rightbutton" onclick="showAnnotations()">Show all annotations</button>
 	<button class="rightbutton" onclick="hideAnnotations()">Hide all annotations</button>
+	<button class="rightbutton" onclick="showOverlay()">Show description</button>
+	<button class="rightbutton" onclick="hideOverlay()">Hide description</button>
+
     </div>
     <div id="poster">
         <div id="header" class="box header tab">
@@ -28,15 +29,37 @@
         </div>
         <div id="stats" class="tab box regular">
 	    <div class="overlay">
+		<h1 style="text-align: center;">Description</h1>
 		<div class="row">
 		    <div class="column">
-			<h2>test</h2>
+			<h2>User story</h2>
+			<p>
+			    The users that I have had in mind for my visualization are
+			    <img src="images/overlay.png" width="90%"><br>
+			    as those were the users the group designed for.
+			    <br><br>
+			    I expect them to look for information about different security breaches in the US. Information such as what kind of attack is most prevalent overall or in a specific state or year. <br>They could also be interested in information about how many individuals are affected by different types of attacks when deciding on how to improve the security at their organization.<br><br>
+			    The users can find information with different focuses by scrolling through the page.
+
+			</p>
 		    </div>
 		    <div class="column">
-			<h2>test</h2>
+			<h2>Underlying data</h2>
+			<p> The data that we used for the project had been gathered by <a href="https://github.com/vincentarelbundock">Vincent Arel-Bundock</a> and was uploaded to a <a href="https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/Ecdat/breaches.csv">GitHub page</a>.
+			    <br><br>
+			    This data was then processed into smaller sheets focused on different areas using <a href="https://products.office.com/sv-se/excel"> Microsoft Excel</a>.
+			    <br>
+			    The dataset originally covered a longer span of time, but it seemed like some parts had incomplete data so we decided to remove those parts of the dataset and work only with what seemed like complete data.
+			</p>
+			<h2>Explanation</h2>
+			<p>
+			    <span style="background-color:rgb(204, 204, 255);">The annotations with blue color are my own individual changes and reflections.</span>
+			    <br>
+			    <span style="background-color:rgb(204, 255, 204);">The annotations with green color are thoughts and decisions that were made in group.</span>
+			</p>
 		    </div>
-
 		</div>
+		<p style="text-align: center; bottom:5%;"> Press <button style="background:gray;" onclick="hideOverlay()">here</button> or on the button in the top bar labeled "Hide description" to continue.</p>
 
 	    </div>
             <p class="big" style="padding: 0 5rem;">
