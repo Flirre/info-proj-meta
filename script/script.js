@@ -310,3 +310,18 @@ function hideAnnotations()
 {
     d3.selectAll(".annotation").style("visibility", "hidden");
 };
+
+
+function showOverlay()
+{
+    $(document).ready(function(){
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+	return false;
+    });
+    d3.selectAll(".overlay").style("visibility", "visible");
+};
+
+function hideOverlay()
+{
+    d3.selectAll(".overlay").style("visibility", "hidden");
+};
