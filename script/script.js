@@ -299,4 +299,4 @@ function gotoTab(id)
 function allTabs()
 {
     d3.selectAll(".tab").style("display", "block");
-}
+};
